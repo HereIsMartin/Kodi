@@ -28,9 +28,9 @@ skip-name-resolve
 bind-address = 0.0.0.0
 
 user        = root
-basedir     = /storage/.xbmc/addons/service.web.lamp
-datadir     = /storage/.xbmc/userdata/addon_data/service.web.lamp/data
-log-error   = /storage/.xbmc/userdata/addon_data/service.web.lamp/mysqld.log
+basedir     = /storage/.kodi/addons/service.web.lamp
+datadir     = /storage/.kodi/userdata/addon_data/service.web.lamp/data
+log-error   = /storage/.kodi/userdata/addon_data/service.web.lamp/mysqld.log
 pid-file    = /var/run/mysqld.pid
 socket		= /var/tmp/mysql.socket
 port		= 3306
