@@ -56,7 +56,7 @@ read_rnd_buffer_size = 512K
 net_buffer_length = 8K
 
 # thread_stack = 128K
-thread_stack = 256K
+thread_stack = 384K
 
 myisam_sort_buffer_size = 8M
 
