@@ -1,0 +1,29 @@
+<advancedsettings>
+  <videodatabase>
+    <type>mysql</type>
+    <host>192.168.1.90</host>
+    <port>3306</port>
+    <user>xbmc</user>
+    <pass>xbmc</pass>
+  </videodatabase>
+  <musicdatabase>
+    <type>mysql</type>
+    <host>192.168.1.90</host>
+    <port>3306</port>
+    <user>xbmc</user>
+    <pass>xbmc</pass>
+  </musicdatabase>
+  <videolibrary>
+    <hideallitems>true</hideallitems>
+  </videolibrary>
+  <video>
+    <excludefromscan action="append">
+      <regexp>[\\/]\.\_</regexp>
+      <regexp>\.AppleDouble</regexp>
+    </excludefromscan>
+    <excludetvshowsfromscan action="append">
+      <regexp>[\\/]\.\_</regexp>
+      <regexp>\.AppleDouble</regexp>
+    </excludetvshowsfromscan>
+  </video>
+</advancedsettings>
