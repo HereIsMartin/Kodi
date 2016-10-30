@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<!-- View_505_BannerInfo -->
+	<!-- View_558_BannerInfo -->
 	<include name="View_558_BannerInfo">
 		<control type="group">
 			<visible>Control.IsVisible(558) + !Window.IsActive(addoninformation)</visible>
