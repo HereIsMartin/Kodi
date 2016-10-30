@@ -215,12 +215,22 @@
 						<label>$INFO[ListItem.Genre]</label>
 						<visible>!IsEmpty(ListItem.Genre)</visible>
 					</control>
+					
 					<control type="label">
 						<width>610</width>
 						<height>40</height>
-						<label>[COLOR labelheader]$LOCALIZE[20360]:[/COLOR] $INFO[ListItem.Property(TotalEpisodes)]$INFO[ListItem.Property(UnWatchedEpisodes), (,[LOWERCASE] $LOCALIZE[16101][/LOWERCASE])]</label>
+						<label>[COLOR labelheader]$LOCALIZE[20360]:[/COLOR] $INFO[ListItem.Property(UnWatchedEpisodes),,[LOWERCASE] $LOCALIZE[16101][/LOWERCASE]] ($INFO[Window(Home).Property(NextAired.Status)])</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
+						<visible>Container.Content(tvshows) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
 					</control>
+					<control type="label">
+						<width>610</width>
+						<height>40</height>
+						<label>[COLOR labelheader]$LOCALIZE[20360]:[/COLOR] $INFO[ListItem.Property(UnWatchedEpisodes),,[LOWERCASE] $LOCALIZE[16101][/LOWERCASE]]</label>
+						<include>ShowCaseInfoPanelButtonsValues</include>
+						<visible>Container.Content(tvshows) + String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
+					</control>
+					
 				</control>
 
 				<!-- Plot -->
@@ -347,8 +357,6 @@
                     <texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture>
                 </control>
             </control>
-			
-			
 		</control>
 	</include>
 </includes>
