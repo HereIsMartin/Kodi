@@ -18,3 +18,11 @@ Add in MyVideoNav.xml:
 
 Add 558 in MyVideoNav.xml:
 	<views>50,51,52,53,55,56,57,58,59,500,501,502,503,510,558</views>
+
+Add in MyVideoNav.xml (below <control type="togglebutton" id="20">):
+	<control type="togglebutton" id="99001">
+		<description>Clean library</description>
+		<include>ButtonCommonValues</include>
+		<label>Clean library</label>
+		<onclick>CleanLibrary(video)</onclick>
+	</control>
