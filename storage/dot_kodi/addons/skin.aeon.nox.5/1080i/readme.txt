@@ -1,9 +1,10 @@
 Folder:
-Kodi/addons/skin.aeon.nox.5/1080i
+.kodi/addons/skin.aeon.nox.5/1080i
+/Users/Martin/Library/Application Support/Kodi/addons/kin.aeon.nox.5/1080i
 
 Add in custom_1129_Views.xml:
 	<item>
-		<label>BannerList</label>
+		<label>BannerInfo</label>
 		<onclick>Container.SetViewMode(558)</onclick>
 		<visible>Window.IsActive(videos)</visible>
 		<visible>Container.Content(tvshows)</visible>
@@ -19,7 +20,7 @@ Add in MyVideoNav.xml:
 Add 558 in MyVideoNav.xml:
 	<views>50,51,52,53,55,56,57,58,59,500,501,502,503,510,558</views>
 
-Add in MyVideoNav.xml (below <control type="togglebutton" id="20">):
+Add in MyVideoNav.xml (above <control type="togglebutton" id="20">):
 	<control type="togglebutton" id="99001">
 		<description>Clean library</description>
 		<include>ButtonCommonValues</include>
