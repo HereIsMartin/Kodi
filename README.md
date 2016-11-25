@@ -1,1 +1,1 @@
-Configuration files, maintenance scripts and settings for Kodi
+Configuration files, maintenance scripts and settings for Kodi.
