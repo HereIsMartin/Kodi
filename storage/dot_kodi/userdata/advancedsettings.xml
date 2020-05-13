@@ -19,7 +19,7 @@
   <video>
     <excludefromscan action="append">
       <regexp>[\\/]\.\_</regexp>
-      <regexp>\.AppleDouble</regexp>
+      
     </excludefromscan>
     <excludetvshowsfromscan action="append">
       <regexp>[\\/]\.\_</regexp>
